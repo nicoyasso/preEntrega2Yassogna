@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Blinker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* << ------------------------------ INICIO body ------------------------------ >> */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../assets/img/back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h2 {
+    font-family: 'Black Han Sans', sans-serif;
+    color: #f5f5f5;
+    padding: 20px 0px 0 20px;
+    margin: 0;
+}
+
+p {
+    color: #f5f5f5;
+    font-family: 'blinker', sans-serif;
+}
+
+/* ^^ ------------------------------ FIN body ------------------------------ ^^ */
+
+/* << ------------------------------ INICIO NavBar ------------------------------ >> */
+.bg-dark {
+    border-bottom: 3px solid #DADADA;
+}
+
+.font-style {
+    font-family: 'Black Han Sans', sans-serif;
+    align-items: center;
+}
+
+.nav-link {
+    color: #f5f5f5;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 10px;
+    transition: all 0.3s;
+}
+
+.navbar-brand img {
+    width: 140px;
+}
+
+.navbar-brand {
+    padding: 20px;
+}
+
+.offcanvas-title img {
+    width: 100px;
+}
+
+.btn-close {
+    background-color: rgb(0, 255, 255);
+    border-color: rgba(0, 255, 255);
+}
+
+.nav-item a:hover {
+    transform: scale(1.2);
+    color: #ea18ce;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+/* ^^ ------------------------------ FIN NavBar ------------------------------ ^^ */
+
+/* << ------------------------------ INICIO Footer ------------------------------ >> */
+.card-footer-down {
+    background-color: rgba(25, 25, 25);
+    font-family: 'blinker', sans-serif;
+    color: #f5f5f5;
+    padding: 10px 0;
+}
+
+.card-footer-body {
+    background-color: #01445C;
+}
+
+.card-footer-down {
+    font-family: 'blinker', sans-serif;
+    background-color: rgba(33, 37, 41);
+}
+
+.card-footer-body {
+    color: #f5f5f5;
+    font-family: 'blinker', sans-serif;
+}
+
+.card-footer-body h5 {
+    font-size: 25px;
+}
+
+.footer-links a {
+    color: rgba(0, 255, 255, 0.8);
+    font-size: 40px;
+    margin: 0 15px;
+}
+
+.card-footer img {
+    width: 100px;
+    background-color: #01445C;
+    border-radius: 50px;
+    margin-block-start: -40px;
+}
+
+/* ^^ ------------------------------ FIN Footer ------------------------------ ^^ */
+
+/* << ------------------------------ INICIO Index ------------------------------ >> */
+
+.firstpresent img {
+    width: 100%;
+    border-radius: 100px 0 0 0;
+    padding: 40px 0 0 40px;
+    opacity: 90%;
+}
+
+.txtfront {
+    margin-right: 40px;
+}
+
+.firstpresent2 img {
+    width: 100%;
+    border-radius: 0 100px 0 0;
+    padding: 40px 40px 0 0px;
+    opacity: 90%;
+}
+
+.firstpresent2 {
+    margin-bottom: 80px;
+}
+
+.txtfront2 h2 {
+    margin-left: 40px;
+}
+
+.frontpage h2 {
+    font-size: 28px;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: start;
+    background-color: rgba(25, 25, 25, 0.9);
+    display: flex;
+    padding: 30px;
+}
+
+.h2-txtfront h2 {
+    border-radius: 0 0 0 30px;
+}
+
+.frontpage {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .frontpage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .firstpresent img:hover,
+    .firstpresent2 img:hover {
+        opacity: 100%;
+    }
+
+}
+
+/* ^^ ------------------------------ FIN Index ------------------------------ ^^ */
+
+/* << ------------------------------ INICIO Contact ------------------------------ >> */
+.contact {
+    margin: 40px 40px 80px 40px;
+    background-color: rgba(33, 37, 41);
+    box-shadow: 0px 10px 10px 10px rgba(255, 0, 0, 0.8);
+    border-radius: 15px;
+}
+
+.data textarea,
+.data input,
+.data select {
+    color: #f5f5f5;
+    font-family: 'blinker', sans-serif;
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 0, 0, 0.8);
+    outline: none;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.data {
+    margin: 20px;
+}
+
+.data button {
+    width: 100%;
+}
+
+.info-form {
+    background-color: rgb(0, 0, 0);
+    color: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+    border-radius: 0 0 15px 15px;
+}
+
+.info-form ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-form p {
+    font-size: 20px;
+    margin: 0;
+}
+
+i {
+    margin-right: 20px;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.img-contact {
+    max-width: 100%;
+    border-radius: 0 15px 0 0;
+}
+
+.instagram-link {
+    display: flex;
+}
+
+.instagram-link a,
+.instagram-link i {
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.instagram-link a {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #f5f5f5;
+}
+
+.info-form ul {
+    padding-top: 20px;
+
+    .data {
+        margin: 20px 50px 20px 50px;
+    }
+}
+
+@media (min-width: 768px) {
+    .contact {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .info-form {
+        border-radius: 0 15px 15px 0;
+        text-align: left;
+    }
+
+    .info-form ul {
+        padding-top: 20px;
+    }
+
+    .instagram-link a,
+    .instagram-link i {
+        font-size: 40px;
+    }
+
+    .data {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .img-contact {
+        display: none;
+    }
+
+    .instagram-link {
+        display: none;
+    }
+}
+
+/* ^^ ------------------------------ FIN Contact------------------------------ ^^ */
+
+/* << ------------------------------ INICIO Events ------------------------------ >> */
+.events {
+    margin: 40px 40px 80px 40px;
+    background-color: rgba(33, 37, 41);
+    box-shadow: 0px 10px 10px 10px rgba(0, 0, 255, 0.8);
+    border-radius: 15px;
+}
+
+.events-card {
+    padding: 0 0 20px 0;
+}
+
+.card {
+    max-width: 400px;
+    text-align: center;
+    justify-self: center;
+    color: #f5f5f5;
+    background-color: rgba(33, 37, 41);
+    font-family: 'blinker', sans-serif;
+    border: none;
+    border-style: double;
+    border-color: #f5f5f5;
+    border-radius: 15px;
+    margin: 1%;
+}
+
+.card-title {
+    font-size: 30px
+}
+
+.carousel {
+    margin: 10px;
+}
+
+.carousel img {
+    border-radius: 15px 15px 0 0;
+}
+
+.events-card {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+@media (min-width: 768px) {
+    .events-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .card-text {
+        display: none;
+    }
+}
+
+/* ^^ ------------------------------ FIN Events ------------------------------ ^^ */
+
+/* << ------------------------------ INICIO History ------------------------------ >> */
+.history {
+    margin: 40px 40px 80px 40px;
+    background-color: rgba(33, 37, 41);
+    box-shadow: 0px 10px 10px 10px rgba(255, 255, 0, 0.8);
+    border-radius: 15px;
+}
+
+.read {
+    margin: 20px 40px 0 40px;
+}
+
+.read p {
+    text-align: justify;
+    font-size: 22px;
+}
+
+.prize img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 50px;
+    left: 30px;
+}
+
+.prize {
+    text-align: right;
+}
+
+/* ^^ ------------------------------ FIN History ------------------------------ ^^ */
+
+/* << ------------------------------ INICIO POS ------------------------------ >> */
+.pos {
+    margin: 40px 40px 80px 40px;
+    background-color: rgb(34, 41, 33);
+    box-shadow: 0px 10px 10px 10px rgba(0, 255, 0, 0.8);
+    border-radius: 15px;
+    font-family: 'blinker', sans-serif;
+}
+
+.state {
+    padding: 0px 60px 20px 60px;
+}
+
+.state label {
+    font-size: 30px;
+
+}
+
+.state select {
+    color: #f5f5f5;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(0, 255, 0, 0.8);
+    outline: none;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgb(34, 41, 33);
+}
+
+.pos-wrapper {
+    background-color: rgb(34, 41, 33);
+    color: #f5f5f5;
+    text-align: center;
+    padding: 10px;
+    border-radius: 0 0 15px 15px;
+
+}
+
+.pos-wrapper ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+.pos-date {
+    margin: 0 30px;
+}
+
+.pos-date-medium,
+.pos-date-down {
+    border-top: 1px solid #fafafa;
+    margin: 0 30px;
+}
+
+.pos-date-medium h4,
+.pos-date-down h4 {
+    margin-top: 20px
+}
+
+.place-data {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .pos {
+        max-width: 900px;
+    }
+
+    .place-data {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        margin: 50px 20px;
+    }
+
+    .pos-date-medium,
+    .pos-date-down {
+        border-left: 1px solid #fafafa;
+        border-top: none;
+        margin: 0;
+    }
+
+    .pos-date-medium h4,
+    .pos-date-down h4 {
+        margin-top: 0
+    }
+}
+
+/* ^^ ------------------------------ FIN POS ------------------------------ ^^ */
