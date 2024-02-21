@@ -1,0 +1,64 @@
+.events {
+    @include cardBack;
+    box-shadow: 0px 10px 10px 10px rgba(0, 0, 255, 0.8);
+    animation-name: animate;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.4s;
+
+    &-card {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        @include desktop {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1%;
+            padding: 20px;
+        }
+    }
+}
+
+@keyframes animate {
+    0% {
+        box-shadow: none;
+
+    }
+}
+
+.card {
+    max-width: 400px;
+    text-align: center;
+    justify-self: center;
+    color: $fontColor;
+    background-color: rgba(33, 37, 41);
+    font-family: $fontSecundary;
+    border: none;
+    border-style: double;
+    border-color: #f5f5f5;
+    border-radius: 15px;
+    margin: 1%;
+
+    &-title {
+        font-size: 30px
+    }
+
+    &-body {
+        padding: 10px;
+    }
+
+    &-text {
+        @include mobile {
+            display: none;
+        }
+
+    }
+}
+
+.carousel {
+    margin: 10px;
+
+    img {
+        border-radius: 15px 15px 0 0;
+    }
+}

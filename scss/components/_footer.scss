@@ -1,0 +1,32 @@
+.card-footer-down {
+    background-color: rgba(33, 37, 41);
+    font-family: $fontSecundary;
+    color: $fontColor;
+    padding: 10px 0;
+}
+
+
+.card-footer-body {
+    background-color: $footerColor;
+    color: $fontColor;
+    font-family: $fontSecundary;
+
+    h5 {
+        font-size: 25px;
+    }
+}
+
+.footer-links a {
+    color: $footerIcons;
+    font-size: 40px;
+    margin: 0 15px;
+}
+
+.card-footer {
+    img {
+        width: 100px;
+        background-color: $footerColor;
+        border-radius: 50px;
+        margin-block-start: -40px;
+    }
+}

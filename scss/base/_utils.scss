@@ -1,0 +1,34 @@
+@mixin cardBack {
+    margin: 40px 25px 80px 25px;
+    background-color: rgba(33, 37, 41);
+    border-radius: 15px;
+    @include desktop {
+        margin: 40px 40px 80px 40px;
+    }
+}
+
+@mixin textComplete {
+    color: $fontColor;
+    font-family: $fontSecundary;
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(255, 0, 0, 0.8);
+    outline: none;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+@mixin instaLinks {
+    font-size: 50px;
+        text-decoration: none;
+        animation: bounceIn;
+        animation-duration: 0.8s;
+}
+
+.posDatesize {
+    border-top: 1px solid #fafafa;
+    margin: 0 30px;
+    
+}
+

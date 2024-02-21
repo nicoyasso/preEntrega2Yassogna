@@ -1,0 +1,50 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.bg-dark {
+    border-bottom: 3px solid #DADADA;
+}
+
+.font-style {
+    font-family: $fontPrimary;
+    align-items: center;
+}
+
+.nav-link {
+    color: $fontColor;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 10px;
+    transition: all 0.4s;
+}
+
+.navbar-brand {
+    padding: 20px;
+    img {
+        width: 140px;
+    } 
+}
+
+.offcanvas-title {
+    img {
+        width: 100px;
+    }
+}
+
+.btn-close {
+    background-color: rgb(0, 255, 255);
+    border-color: rgba(0, 255, 255);
+}
+
+.nav-item {
+    a {
+        &:hover{
+            transform: scale(1.2);
+            color: #ea18ce;
+        }
+    }
+}
+

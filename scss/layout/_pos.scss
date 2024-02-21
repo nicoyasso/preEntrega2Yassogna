@@ -1,0 +1,93 @@
+.pos {
+    @include cardBack;
+    box-shadow: 0px 10px 10px 10px rgba(0, 255, 0, 0.8);
+    font-family: $fontSecundary;
+    animation-name: animate;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.4s;
+}
+
+@keyframes animate {
+    0% {
+        box-shadow: none;
+
+    }
+}
+
+.state {
+    padding: 0px 60px 20px 60px;
+
+    label {
+        font-size: 30px;
+    }
+
+    select {
+        color: $fontColor;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid rgba(0, 255, 0, 0.8);
+        outline: none;
+        border-radius: 20px;
+        text-align: center;
+        background-color: rgb(34, 41, 33);
+    }
+}
+
+.pos-wrapper {
+    background-color: rgb(33, 37, 41);
+    color: $fontColor;
+    text-align: center;
+    padding: 10px;
+    border-radius: 0 0 15px 15px;
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+}
+
+.pos-date {
+    margin: 0 30px;
+
+    &-medium {
+        @extend .posDatesize;
+        @include desktop {
+            border-left: 1px solid #fafafa;
+        border-top: none;
+        margin: 0;
+        }
+        h4 {
+            margin-top: 20px;
+            @include desktop {
+                margin-top: 0;
+                }
+        }
+    }
+
+    &-down {
+        @extend .posDatesize;
+        @include desktop {
+            border-left: 1px solid #fafafa;
+        border-top: none;
+        margin: 0;
+        }
+        h4 {
+            margin-top: 20px;
+            @include desktop {
+            margin-top: 0;
+            }
+            
+        }
+    }
+}
+
+.place-data {
+    display: grid;
+    grid-template-columns: 1fr;
+    @include desktop {
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        margin: 50px 20px;
+    }
+}

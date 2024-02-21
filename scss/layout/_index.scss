@@ -1,0 +1,74 @@
+.firstpresent {
+    text-align: right;
+
+    img {
+        width: 100%;
+        border-radius: 100px 0 0 0;
+        padding: 40px 0 0 40px;
+
+
+        @include desktop {
+            max-width: 450px;
+            animation: backInLeft;
+            animation-duration: 1s;
+        }
+    }
+}
+
+.firstpresent2 {
+    margin-bottom: 80px;
+
+    img {
+        width: 100%;
+        border-radius: 0 100px 0 0;
+        padding: 40px 40px 0 0px;
+
+        @include desktop {
+            max-width: 450px;
+            animation: backInRight;
+            animation-duration: 1s;
+            
+        }
+    }
+}
+
+.txtfront {
+    margin-right: 40px;
+
+    h2 {
+        border-radius: 0 0 40px 0;
+        background-color: rgba(25, 25, 25, 0.9);
+    }
+
+    @include desktop {
+        animation: fadeInLeft;
+        animation-duration: 1.5s;
+    }
+}
+
+.txtfront2 {
+    margin-left: 40px;
+
+    h2 {
+        border-radius: 0 0 0 40px;
+        background-color: rgba(25, 25, 25, 0.9);
+    }
+
+    @include desktop {
+        animation: fadeInRight;
+        animation-duration: 1.5s;
+    }
+}
+
+.frontpage {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include desktop {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.h2-txtfront {
+        text-align: end;
+}

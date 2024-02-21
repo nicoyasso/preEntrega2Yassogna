@@ -1,0 +1,43 @@
+.history {
+    @include cardBack;
+    box-shadow: 0px 10px 10px 10px rgba(255, 255, 0, 0.8);
+    animation-name: animate;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.4s;
+}
+
+@keyframes animate {
+    0% {
+        box-shadow: none;
+
+    }
+}
+
+.read {
+    margin: 20px 20px 0 20px;
+
+    p {
+        text-align: justify;
+        font-size: 16px;
+        @include desktop {
+            font-size: 24px;
+            padding: 20px 60px 0 60px;
+        }
+    }
+
+}
+
+.prize {
+    text-align: right;
+
+    img {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        top: 50px;
+        left: 30px;
+        animation: fadeInRight;
+        animation-duration: 1s;
+    }
+}
