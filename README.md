@@ -1,6 +1,6 @@
-<h1 align="center">GIN HOFFMAN</h1>
+<p align="center"><img src="/assets/img/logo_navbar.png"/></p> 
 <p align="center">Bienvenido al repositorio del proyecto en su fase final de desarrollo para la empresa especializada en bebidas espirituosas. Nos enorgullece presentar "Gin Hoffman", nuestra bebida de excelencia que rinde homenaje al distinguido químico suizo.</p>
-<p align="center"><img src="https://www.webdevelopersnotes.com/wp-content/uploads/create-a-simple-home-page.png"/></p> 
+
 
 ## Tabla de contenidos:
 ---
